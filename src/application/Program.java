@@ -1,42 +1,19 @@
 package application;
 
-import java.util.Locale;
-import java.util.Scanner;
-
 public class Program {
 
 	public static void main(String[] args) {
-		Locale.setDefault(Locale.US);
+		
 	
-		/*build a program that reads multiple weights and heights and 
-		returns how many are above ideal weight*/
+		//build a program that prints the 10 first multiples of 3
 		
-		Scanner sc = new Scanner(System.in);
+		int n = 3, sum = 0;
 		
-		System.out.println("Type your weight: ");
-		double weight = sc.nextDouble();
-		
-		System.out.println("Type your height: ");
-		double height = sc.nextDouble();
-		
-		int counter = 0;
-		
-		while(weight != -1.0 && height != -1.0) {
-			if(weight/(height*height) > 25) {
-				counter += 1;
-			}
-			
-			System.out.println("Type your weight: ");
-			weight = sc.nextDouble();
-			
-			if(weight != -1.0) {
-				System.out.println("Type your height: ");
-				height = sc.nextDouble();
-			}
+		for(int i = 1; i <= 10; i++) {
+			int mult = n * i;
+			sum += mult;
 		}
 		
-		System.out.println(counter + " people are above weight! ");
-		
-		sc.close();
+		System.out.println(sum);
 	}
 }
