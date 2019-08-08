@@ -14,10 +14,10 @@ public class Program {
 		System.out.println("Type a integer number: ");
 		int number = sc.nextInt();
 		
-		if(number >= 0) {
-			System.out.println("This number is positive! ");
+		if((number % 2) == 0) {
+			System.out.println("This number is even! ");
 		} else {
-			System.out.println("This number is NOT positive! ");
+			System.out.println("This number is odd! ");
 		}
 		
 		sc.close();
