@@ -6,23 +6,19 @@ public class Program {
 
 	public static void main(String[] args) {
 	
-		//build a program that shows your entire name, 
-		//your soccer team and your neighborhood
+		//build a program that reads a number and 
+		//tells if its positive 
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("Your name: ");
-		String name = sc.nextLine();
+		System.out.println("Type a integer number: ");
+		int number = sc.nextInt();
 		
-		System.out.println("Your soccer team: ");
-		String team = sc.nextLine();
-		
-		System.out.println("Your neighborhood: ");
-		String nei = sc.nextLine();
-		
-		System.out.println("Your name is " + name + 
-				"\nYour soccer team is " + team +
-				"\nYour neighborhood is " + nei);
+		if(number >= 0) {
+			System.out.println("This number is positive! ");
+		} else {
+			System.out.println("This number is NOT positive! ");
+		}
 		
 		sc.close();
 	}
